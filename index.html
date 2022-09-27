@@ -16,33 +16,38 @@
         </div>
     </section>
     <section>
-        <form type="submit" action="Registered.html">
+        <form type="submit" action="Registered.html" method="post" onsubmit="return validate()">
             <div>
                 <p class="unit">NAME<p>
-                <input class="edit" type="text" placeholder="Enter your name" id="name">
+                <input class="edit" type="text" name="name" placeholder="Enter your name" id="name">
+                <span id="fname" class="text-danger font-weight-bold"></span>
             </div>
             <div>
                 <p class="unit">USERNAME</p>
-                <input class="edit" type="text" placeholder="Enter your username" id="username">
+                <input class="edit" type="text" name="username" placeholder="Enter your username" id="username">
+                <span id="uname" class="text-danger font-weight-bold"></span>
             </div>
             <div>
                 <p class="unit">PHONE NUMBER</p>
-                <input class="edit" type="number" placeholder="Enter you phone number" id="number">
+                <input class="edit" type="number" name="number" placeholder="Enter you phone number" id="number">
+                <span id="phoneno" class="text-danger font-weight-bold"></span>
             </div>
             <div id="email">
                 <p class="unit">EMAIL ID</p>
-                <input class="edit" type="text" placeholder="Enter your email id" id="email">
+                <input class="edit" type="text" name="email" placeholder="Enter your email id" id="email">
+                <span id="emailid" class="text-danger font-weight-bold"></span>
             </div>
             <div id="password">
                 <p class="unit">PASSWORD</p>
-                <input class="edit" type="text" placeholder="Enter your password" id="password">
+                <input class="edit" type="text" name="password" placeholder="Enter your password" id="password">
+                <span id="pass" class="text-danger font-weight-bold"></span>
             </div>
             <div>
                 <p class="unit">MESSAGE</p>
                 <textarea class="edit1"  cols="30" rows="3" type="text" placeholder="Enter your message"></textarea>
             </div>
             <div>
-                <button>SUBMIT</button>
+                <input type="submit" id="btn" class="btn btn-sm btn-danger">
             </div> 
         </form>
         <div>
